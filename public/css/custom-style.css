@@ -3,11 +3,23 @@
   height: 2253px;
   position: relative;
 }
+
+.container {
+  position: inherit;
+}
+
+.transparent-btn {
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
 .logo-container {
   width: 1400px;
   height: 130px;
   background-color: #ffffff;
 }
+
 .company-logo {
   width: 466px;
   height: 72px;
@@ -26,9 +38,10 @@
   position: relative;
   width: 1400px;
   height: 418px;
+  display: none;
 }
 
-.carousel.carousel-slide.active {
+.carousel-slide.active {
   display: block;
 }
 
@@ -44,17 +57,19 @@
   left: 305px;
   bottom: 223px;
   display: inline-block;
-  width: 792px;
+  width: 825px;
   height: 58px;
   color: #ffffff;
   font-family: "Yu Go";
-  font-size: 55px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 80px;
   letter-spacing: 3px;
+  margin-top: 0;
 }
 
 .carousel-caption-text {
+  text-align: justify;
   position: absolute;
   top: 241px;
   left: 418px;
@@ -67,5 +82,269 @@
   font-weight: bold;
   line-height: 24px;
   letter-spacing: 0.8px;
-  margin-top: 46px;
+  margin-top: 0;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 185px;
+}
+
+.carousel-button-left {
+  position: absolute;
+  left: 160px;
+}
+
+.carousel-button-right {
+  position: absolute;
+  left: 1210px;
+}
+
+.carousel-pagers {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 513px;
+  width: 100%;
+}
+
+.pager-btn {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.content-area {
+  width: 1400px;
+  height: 1752px;
+  display: flex;
+  padding-top: 43px;
+}
+
+.article-list {
+  width: 678px;
+  height: 116px;
+  padding-left: 160px;
+}
+
+.article-item {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.article-item div img {
+  width: 206px;
+  height: 116px;
+}
+
+.article-content {
+  width: 682px;
+  height: 116px;
+  margin-left: 14px;
+}
+
+.article-content .date {
+  width: 60px;
+  height: 10px;
+  color: #999999;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+  letter-spacing: -0.26px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 14px;
+}
+
+.article-content .caption {
+  width: 457px;
+  height: 40px;
+  color: #000000;
+  font-family: "Yu Go";
+  /* font-size: 18px; */
+  /* issue with fitting using current font size */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: -0.36px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 12px;
+}
+
+.article-content .content {
+  width: 462px;
+  height: 29px;
+  color: #000000;
+  font-family: "Yu Go";
+  /* font-size: 13px; */
+  /* issue with fitting using current font size */
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.9px;
+  letter-spacing: -0.26px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.banner-list {
+  width: 340px;
+  height: 1018px;
+  background-color: #efefef;
+  background-color: #efefef;
+  margin-left: 62px;
+  padding-bottom: 11px;
+}
+
+.main-banner {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+.recommended {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+}
+.recommend-title {
+  text-align: center;
+  margin-top: 21px;
+  padding-bottom: 10px;
+  color: #000000;
+  font-family: "Yu Go";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36.02px;
+  letter-spacing: 2.15px;
+  border-bottom: 2px solid #000000;
+}
+
+.news-item {
+  display: flex;
+  margin-top: 20px;
+}
+
+.news-item div img {
+  width: 112px;
+  height: 63px;
+}
+
+.news-content {
+  margin-left: 8px;
+}
+
+.news-content .caption {
+  width: 166px;
+  height: 45px;
+  color: #000000;
+  font-family: "Yu Go";
+  /* font-size: 13px; */
+  /* issue with fitting using current font size */
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16.25px;
+  letter-spacing: -0.13px;
+}
+
+.news-content .date {
+  width: 62px;
+  height: 9px;
+  color: #999999;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.24px;
+}
+
+.banner-tiles {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.banner-tiles .tile {
+  width: 300px;
+  height: 94px;
+  background-color: #666666;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.show-more {
+  width: 404px;
+  height: 40px;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+  /* Text style for "M, o, r, e" */
+  letter-spacing: 0.2px;
+  border: transparent;
+  text-align: center;
+  position: relative;
+  margin-left: 139px;
+  margin-right: 139px;
+}
+.show-more .more-icon {
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+}
+
+.footer {
+  display: flex;
+  width: 1400px;
+  height: 45px;
+  background-color: #000000;
+}
+
+.footer-nav {
+  display: inherit;
+  color: #ffffff;
+  font-family: "Yu Go";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.26px;
+  margin-left: 159px;
+  align-items: center;
+}
+
+.footer-nav li {
+  padding-right: 20px;
+  list-style: none;
+}
+
+.footer .copyright {
+  display: inherit;
+  align-items: center;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.28px;
+  margin-left: 781px;
+}
+
+.top-button {
+  position: absolute;
+  bottom: 65px;
+  right: 161px;
+  width: 24px;
+  height: 14px;
+  background-image: url("../images/icn_arrow.font.png");
+  background-color: transparent;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }
