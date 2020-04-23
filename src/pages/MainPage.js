@@ -9,19 +9,17 @@ class MainPage extends React.Component {
   render() {
     return (
       <>
-        <div className="container">
-          <Header />
+        <Header />
+        <div className="content-area">
           <Carousel />
-          <div className="content-area">
-            <ArticleList />
-            <BannerList />
-          </div>
-          <Footer />
-          <button
-            className="top-button transparent-btn clickable"
-            onClick={() => window.scrollTo(0, 0)}
-          ></button>
+          <ArticleList />
+          <BannerList />
         </div>
+        <Footer />
+        <button
+          className="top-button transparent-btn clickable"
+          onClick={() => window.scrollTo(0, 0)}
+        ></button>
       </>
     );
   }

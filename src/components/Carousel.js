@@ -39,10 +39,8 @@ class Carousel extends React.Component {
                 src={process.env.PUBLIC_URL + "/images/" + data.image}
                 alt={data.image}
               />
-              <div className="carousel-caption">
                 <div className="carousel-caption-header">{data.header}</div>
                 <div className="carousel-caption-text">{data.text}</div>
-              </div>
               <div className="carousel-buttons">
                 <button className="carousel-button-left transparent-btn clickable">
                   <img

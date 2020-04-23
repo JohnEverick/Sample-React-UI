@@ -1,11 +1,10 @@
 #root {
   width: 1400px;
   height: 2253px;
-  position: relative;
 }
 
-.container {
-  position: inherit;
+div {
+  white-space: pre-wrap;
 }
 
 .transparent-btn {
@@ -15,27 +14,34 @@
 }
 
 .logo-container {
-  width: 1400px;
+  width: 1480px;
   height: 130px;
-  background-color: #ffffff;
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 3px 0px 0px rgba(231, 186, 47, 0.004);
 }
 
 .company-logo {
-  width: 466px;
-  height: 72px;
-  color: #000000;
-  font-family: "Lucida Calligraphy";
   font-size: 60px;
-  font-weight: bold;
-  line-height: 45px;
-  letter-spacing: 3px;
+  font-family: "Lucida Calligraphy";
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  line-height: 0.75;
+  text-align: center;
   position: absolute;
-  top: 31px;
-  right: 469px;
+  left: 466.33px;
+  top: 29.62px;
+  width: 470.66px;
+  height: 72.54px;
 }
 
 .carousel-slide {
-  position: relative;
+  background-color: rgb(51, 51, 51);
+  position: absolute;
+  left: 0px;
+  top: 130px;
   width: 1400px;
   height: 418px;
   display: none;
@@ -45,44 +51,33 @@
   display: block;
 }
 
-.carousel-caption {
-  text-align: center;
-  display: block;
-  justify-content: center;
-}
-
 .carousel-caption-header {
-  position: absolute;
-  top: 137px;
-  left: 305px;
-  bottom: 223px;
-  display: inline-block;
-  width: 825px;
-  height: 58px;
-  color: #ffffff;
-  font-family: "Yu Go";
   font-size: 60px;
+  font-family: "YuGo";
+  color: rgb(255, 255, 255);
   font-weight: bold;
-  line-height: 80px;
-  letter-spacing: 3px;
-  margin-top: 0;
+  line-height: 1.333;
+  text-align: center;
+  position: absolute;
+  left: 305px;
+  top: 137px;
+  width: 792px;
+  height: 58px;
 }
 
 .carousel-caption-text {
-  text-align: justify;
+  font-size: 16px;
+  font-family: "YuGo";
+  color: rgb(255, 255, 255);
+  font-weight: medium;
+  line-height: 1.5;
+  text-align: center;
   position: absolute;
-  top: 241px;
-  left: 418px;
-  display: inline-block;
+  left: 417.137px;
+  top: 241.92px;
+
   width: 565px;
   height: 39px;
-  color: #ffffff;
-  font-family: "Yu Go";
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 24px;
-  letter-spacing: 0.8px;
-  margin-top: 0;
 }
 
 .carousel-buttons {
@@ -105,7 +100,7 @@
   justify-content: center;
   position: absolute;
   top: 513px;
-  width: 100%;
+  width: 1400px;
 }
 
 .pager-btn {
@@ -115,22 +110,17 @@
   margin-right: 8px;
 }
 
-.content-area {
-  width: 1400px;
-  height: 1752px;
-  display: flex;
-  padding-top: 43px;
-}
-
 .article-list {
-  width: 678px;
-  height: 116px;
-  padding-left: 160px;
+  position: absolute;
+  left: 154px;
+  top: 581px;
+  width: 688px;
+  height: 1667px;
 }
 
 .article-item {
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 21px;
 }
 
 .article-item div img {
@@ -159,34 +149,30 @@
 }
 
 .article-content .caption {
-  width: 457px;
+  font-size: 18px;
+  font-family: "YuGo";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
   height: 40px;
-  color: #000000;
-  font-family: "Yu Go";
-  /* font-size: 18px; */
-  /* issue with fitting using current font size */
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 23.4px;
-  letter-spacing: -0.36px;
   padding-right: 0px;
   padding-left: 0px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .article-content .content {
-  width: 462px;
-  height: 29px;
-  color: #000000;
-  font-family: "Yu Go";
-  /* font-size: 13px; */
-  /* issue with fitting using current font size */
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16.9px;
-  letter-spacing: -0.26px;
-  padding-right: 0px;
-  padding-left: 0px;
+  font-size: 13px;
+  font-family: "YuGo";
+  color: rgb(0, 0, 0);
+  line-height: 1.1;
+  text-align: left;
+  font-weight: medium;
+  -moz-transform: matrix(0.98159999821836, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(0.98159999821836, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(0.98159999821836, 0, 0, 1, 0, 0);
+  width: 470.188px;
+  height: 30.062px;
 }
 
 .banner-list {
@@ -194,8 +180,10 @@
   height: 1018px;
   background-color: #efefef;
   background-color: #efefef;
-  margin-left: 62px;
   padding-bottom: 11px;
+  position: absolute;
+  left: 900px;
+  top: 590px;
 }
 
 .main-banner {
@@ -215,7 +203,7 @@
   margin-top: 21px;
   padding-bottom: 10px;
   color: #000000;
-  font-family: "Yu Go";
+  font-family: "YuGo";
   font-size: 24px;
   font-weight: bold;
   line-height: 36.02px;
@@ -238,27 +226,25 @@
 }
 
 .news-content .caption {
-  width: 166px;
-  height: 45px;
-  color: #000000;
-  font-family: "Yu Go";
-  /* font-size: 13px; */
-  /* issue with fitting using current font size */
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 16.25px;
-  letter-spacing: -0.13px;
+  font-size: 13px;
+  font-family: "YuGo";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  -moz-transform: matrix(1.00033912665062, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.00033912665062, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.00033912665062, 0, 0, 1, 0, 0);
+  width: 165.988px;
+  height: 45.662px;
 }
 
 .news-content .date {
-  width: 62px;
-  height: 9px;
-  color: #999999;
-  font-family: Helvetica;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.24px;
+  font-size: 13px;
+  font-family: "Helvetica";
+  color: rgb(153, 153, 153);
+  line-height: 1.4;
+  margin-top: 3px;
 }
 
 .banner-tiles {
@@ -270,27 +256,19 @@
   width: 300px;
   height: 94px;
   background-color: #666666;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 19px;
 }
 
 .show-more {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  position: absolute;
+  left: 299px;
+  top: 2040px;
   width: 404px;
   height: 40px;
-  background-color: #333333;
-  color: #ffffff;
-  font-family: Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 45px;
-  /* Text style for "M, o, r, e" */
-  letter-spacing: 0.2px;
-  border: transparent;
-  text-align: center;
-  position: relative;
-  margin-left: 139px;
-  margin-right: 139px;
 }
+
 .show-more .more-icon {
   width: 10px;
   height: 16px;
@@ -300,16 +278,18 @@
 }
 
 .footer {
-  display: flex;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 0px;
+  top: 2300px;
   width: 1400px;
   height: 45px;
-  background-color: #000000;
 }
 
 .footer-nav {
-  display: inherit;
+  display: flex;
   color: #ffffff;
-  font-family: "Yu Go";
+  font-family: "YuGo";
   font-size: 13px;
   font-weight: 500;
   line-height: 32px;
@@ -324,21 +304,19 @@
 }
 
 .footer .copyright {
-  display: inherit;
-  align-items: center;
-  color: #ffffff;
-  font-family: Helvetica;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.28px;
-  margin-left: 781px;
+  font-family: "Helvetica";
+  color: rgb(255, 255, 255);
+  line-height: 2.286;
+  position: absolute;
+  left: 1142.937px;
+  /* top: 2316px; */
 }
 
 .top-button {
   position: absolute;
-  bottom: 65px;
-  right: 161px;
+  top: 2266px;
+  left: 1215px;
   width: 24px;
   height: 14px;
   background-image: url("../images/icn_arrow.font.png");

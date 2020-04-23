@@ -4,11 +4,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="logo-container">
-        <img
-          src={process.env.PUBLIC_URL + "images/Website_Logo.png"}
-          className="company-logo clickable"
-          alt="Website_Logo.png"
-        />
+        <div className="company-logo clickable">Website Logo</div>
       </div>
     );
   }
