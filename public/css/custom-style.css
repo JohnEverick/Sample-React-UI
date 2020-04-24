@@ -1,6 +1,7 @@
 #root {
   width: 1400px;
   height: 2253px;
+  font-family: "YuGo";
 }
 
 div {
@@ -167,12 +168,12 @@ div {
   color: rgb(0, 0, 0);
   line-height: 1.1;
   text-align: left;
-  font-weight: medium;
   -moz-transform: matrix(0.98159999821836, 0, 0, 1, 0, 0);
   -webkit-transform: matrix(0.98159999821836, 0, 0, 1, 0, 0);
   -ms-transform: matrix(0.98159999821836, 0, 0, 1, 0, 0);
   width: 470.188px;
   height: 30.062px;
+  letter-spacing: -0.3px;
 }
 
 .banner-list {
@@ -237,6 +238,7 @@ div {
   -ms-transform: matrix(1.00033912665062, 0, 0, 1, 0, 0);
   width: 165.988px;
   height: 45.662px;
+  letter-spacing: -0.3px;
 }
 
 .news-content .date {
@@ -296,6 +298,7 @@ div {
   letter-spacing: 0.26px;
   margin-left: 159px;
   align-items: center;
+  padding-inline-start: 0px !important;
 }
 
 .footer-nav li {
@@ -310,7 +313,6 @@ div {
   line-height: 2.286;
   position: absolute;
   left: 1142.937px;
-  /* top: 2316px; */
 }
 
 .top-button {
